@@ -1,43 +1,50 @@
 import React from 'react';
+import Slider from '../../components/Slider/Slider'
 
 const Project = () => (
-    <div className="card">
-        <form>
-            <div class="form-group row">
-                <label for="project" class="col-sm-2 col-form-label">project</label>
-                <div class="col-md-6">
-                    <input type="text" class="form-control" id="project" placeholder="project" />
+    <div className="card ">
+        <form className="m-2">
+            <div className="form-group row">
+                <label for="project" className="col-md-2 text-left font-weight-bold col-form-label">Project</label>
+                <div className="col-md-10">
+                    <input type="text" className="form-control" id="project" placeholder="Project" />
                 </div>
             </div>
-            <div class="form-group row">
-                <div class="col-md-2"></div>
-                <div class="col-md-4 ">
-                    <div class="form-check text-left">
-                        <input class="form-check-input" type="checkbox" id="gridCheck1" />
-                        <label class="form-check-label " for="gridCheck1">
+            <div className="form-group row">
+                <div className="col-md-2"></div>
+                <div className="col-md-4 ">
+                    <div className="form-check text-left">
+                        <input className="form-check-input" type="checkbox" id="gridCheck1" />
+                        <label className="form-check-label " for="gridCheck1">
                             set Start date and end date</label>
                     </div>
                 </div>
-                <div class="col-md-4 text-left">
+                <div className="col-md-6 text-right ">
                     <button className="mr-2 btn btn-outline-secondary" type="button">Start Date</button>
-                    <button   className="mr-2 btn btn-outline-secondary" type="button">End Date</button>
+                    <button   className=" btn btn-outline-secondary" type="button">End Date</button>
                 </div>
                 
             </div>
-            <div class="form-group row">
-                <label for="inputPassword3" class="col-md-2 col-form-label">Manager</label>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" id="inputPassword3" placeholder="Manager" />
+            <div className="form-group row">
+              <label  className="col-md-2 text-left font-weight-bold col-form-label">Priority</label>
+              <div className="col-md-8">
+              <Slider/>
+              </div>
+              </div>
+
+            <div className="form-group row">
+                <label for="inputPassword3" className="col-md-2 text-left font-weight-bold col-form-label">Manager</label>
+                <div className="col-md-8">
+                    <input type="text" className="form-control" id="inputPassword3" placeholder="Manager" />
                 </div>
                 <div className="col-md-2 text-right">
-                <button type="button" class="btn btn-outline-secondary">Search</button>
+                <button type="button" className="btn btn-outline-secondary">Search</button>
                 </div>
             </div>
-            <div className="row col-md-10">
-                <div className="col-md-4"></div>
-            <div className="col-md-6 text-right">
-            <button type="button" class="btn btn-secondary mr-2 pr-2">Add</button>
-            <button type="button" class="btn btn-secondary mr-8 pr-2">Reset</button>
+            <div className="row col-md-12">
+            <div className="col-md-12 text-right">
+            <button type="button" className="btn btn-primary col-md-2 mr-2 pr-2">Add</button>
+            <button type="button" className="btn btn-secondary col-md-2 ">Reset</button>
             </div>
             </div>
             
